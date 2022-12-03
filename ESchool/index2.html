@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+     <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">  </script> 
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">  </script> 
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+
+    
+   
+	<script>
+        function check(){
+	     if(document.getElementById('password').value == '123'){
+	        
+	        
+	             document.getElementById('admin_form').style.display='';
+	             document.getElementById('password').value = '';
+	         }
+	       else if(document.getElementById('password1').value == '12345'){
+	         
+	        document.getElementById('teacher_form').style.display='';
+	             document.getElementById('password1').value = '';
+	         
+	     }  
+	 
+	     else{
+        alert('wrong password!!');
+        return false;
+    }
+	    
+	}
+	
+
+	</script> 
+   <title>Administrative Link</title>   
+</head>
+<body>
+    <div class="container">
+     <div class="col-sm-12">
+         <br>
+          <h3 align="center">Lumbini College Online Classes Schedule </h3>
+          <div class="row">
+            <div class="col-sm-6 text-center">
+         
+         <input type="password" class="form-control" id="password" name="password"  placeholder="Aministrative Passwrord"/>
+         <button type="button" id="login" onclick="check()" style="width:200px ; margin:5px" class="btn btn-outline-danger"><b>Admin Login</b> </button></div>
+          <div class="col-sm-6 text-center">
+         <input type="password" class="form-control" id="password1" name="password1"  placeholder="Teacher Passwrord"/>
+         <button type="button" id="login" onclick="check()" style="width:200px ; margin:5px" class="btn btn-outline-danger"><b>Teacher Login</b> </button>
+     </div>
+    </div> </div> </div>
+    
+    <form id="admin_form" name="admin_form" style="display:none;">
+    <div class="container">
+     <div class="col-sm-12">
+<br>
+<br>
+       
+       <p> Please select your class or section to view the scheduled online sessions for today</p>
+      <div class="row">
+            <div class="col-sm-12 text-center">
+        
+         
+           <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1r3bSSuLT2zan0i4qcvxkJNVmXKohAMutqob_XCxs-mM/edit?usp=sharing';" target="_blank" style="width:120px ; margin:5px" class="btn btn-outline-danger"><b>Art</b> </button>
+            <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1c1Bf8M2uWDesrABU2kZ6Htk2A2qhqHL8zbM0YwIgRh4/edit?usp=sharing';"style="width:120px ; margin:5px" class="btn btn-outline-danger"><b>Commerce</b></button>
+            <button type="button" style="width:120px ; margin:5px" class="btn btn-outline-danger"><b>Science</b></button>
+            <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1qATVul9JGSD0QehgXKB1U3cKiBmL8UTnsi7mNk1mX9o/edit?usp=sharing';" style="width:120px ; margin:5px" class="btn btn-outline-danger"><b>Technology</b></button>
+          </div>
+        </div>
+    <hr>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+                
+            <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1-7e5WczqTL9m8onQwxLhLPoRD4I2trv0TApaSQU-wOk/edit?usp=sharing';" style="width:120px ; margin:5px" class="btn btn-outline-danger"><b>Grade 9</b></button>
+            <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1pVOCe9isSMi9gjOkBMRbJi8ILQ5tsCeyIKSNSsSgW98/edit?usp=sharing';" style="width:120px ; margin:5px" class="btn btn-outline-danger"><b>Grade 10</b></button>
+            <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/1xFhMueg0XXH8ZNn_ooj_SLiobz_JkrIVrXM4YeOZIOc/edit?usp=sharing';" style="width:120px ; margin:5px" class="btn btn-outline-danger"><b>Grade 11</b></button>
+          </div>
+        
+        </div>
+ </div>
+ </div>
+ </form>
+ <br/>
+  <form id="teacher_form" name="teacher_form" style="display:none;">
+<div class="container">
+     <div class="col-sm-12">
+<br>
+<br>
+       
+    
+       <p> Dear Teachers <br> 
+       First schedule your zoom meeting using your zoom app. Please fill the form to your relevant class/classes.<br>
+       Note that the form should be fill <b>only on the day</b> the class going to be held.</p>
+      <p> Feel free to contact ICT Unit for your assistance. </p>
+    
+        <hr>
+    
+       <p> Please select your class or section to view the form.</p>
+       <div class="row">
+            <div class="col-sm-12 text-center">
+       
+        
+         
+           <button type="button" onclick="location.href='https://forms.gle/U2xLkNDtnvNtv4Dp8';" style="width:120px ; margin:5px" class="btn btn-outline-success"><b>Art</b> </button>
+            <button type="button" onclick="location.href='https://forms.gle/NwSvX9EZWkXJZ5wH8';"style="width:120px ; margin:5px" class="btn btn-outline-success"><b>Commerce</b></button>
+            <button type="button" style="width:120px ; margin:5px" class="btn btn-outline-success"><b>Science</b></button>
+            <button type="button" onclick="location.href='https://forms.gle/6v5MWTbMbwdqUaS56';" style="width:120px ; margin:5px" class="btn btn-outline-success"><b>Technology</b></button>
+          </div>
+        </div>
+    <hr>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+                
+            <button type="button" onclick="location.href='https://forms.gle/TxXyUcwD56Js7kjx8';" style="width:120px ; margin:5px" class="btn btn-outline-success"><b>Grade 9</b></button>
+            <button type="button" onclick="location.href='https://forms.gle/CgTmYujhKzpvJubd7';" style="width:120px ; margin:5px" class="btn btn-outline-success"><b>Grade 10</b></button>
+            <button type="button" onclick="location.href='https://forms.gle/fiKKqz14MPbqvi4NA';" style="width:120px ; margin:5px" class="btn btn-outline-success"><b>Grade 11</b></button>
+          </div>
+        
+        </div>
+     
+    
+    
+      </div>
+      </div>
+</form>
+</body>
+</html>
